@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css.css">
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .bor {
+            border: 2px solid black;
+        }
+
+        .profile-img {
+            max-width: 100%;
+            height: auto;
+            padding: 20px 0px;
+            border-radius: 10px;
+            padding: 30px;
+            /* Rounded corners */
+        }
+
+        @media (min-width:1245px) {
+            .container h4 {
+                font-size: 45px;
+            }
+
+            .container p {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="container-fluid ">
+        <div class="row">
+            <div class="col-12 px-0">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">
+                        <img src="all-media/log.png" alt="Logo" height="40">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                        aria-controls="mobileMenu" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pay-fee.html">PAY FEE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Offcanvas Menu for Mobile -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="mobileMenuLabel">
+                            <img src="all-media/log.png" class="img-fluid" alt="Logo" height="40">
+                        </h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pay-fee.html">PAY FEE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Offcanvas -->
+            </div>
+        </div>
+    </header>
+    <!-- content box -->
+    <div class="container mt-4">
+        <!-- Row with photo and message -->
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT1.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Anshika Samkaria – Head Girl</h4>
+                <p>Anshika Samkaria, a Grade 12 Medical student, is a disciplined and compassionate leader committed to
+                    selfless service.
+                    She addresses the school during functions, maintains discipline, supports council programs, and acts
+                    as a bridge between
+                    students and faculty. Her goals focus on building an inspiring, inclusive culture with strong
+                    participation in
+                    academics, sports, and culture, alongside creating a safe and disciplined environment. Anshika’s
+                    achievements include
+                    financial management for the farewell event, participation in volleyball and basketball, class
+                    decoration, and
+                    volunteering for the NSS Camp.</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT-2.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Arnav Rana – Head Boy</h4>
+                <p>Arnav Rana, a Grade 12 Science student, is a bold and determined leader who believes in amplifying
+                    every student voice.
+                    He leads the Student Council, coordinates initiatives, and represents the school at various forums.
+                    His goals are to
+                    promote character development alongside academics and sports, foster inclusivity, and build
+                    leadership pathways for
+                    juniors. Arnav’s achievements include winning debate and science quiz competitions and representing
+                    the school at the
+                    State Level Scouts and Guides.</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT3.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Soham Jaryal – Discipline Captain</h4>
+                <p>Soham Jaryal, a Grade 12 Science student, serves as the Discipline Captain with unwavering focus and
+                    integrity. Known
+                    for his calm yet firm leadership, he promotes a respectful school environment through peer
+                    accountability, conflict
+                    resolution, and positive role modelling. Soham leads the prefect team, supports student well-being,
+                    and collaborates
+                    closely with teachers to ensure discipline is constructive and inclusive. His goals include
+                    fostering empathy,
+                    championing anti-bullying efforts, and building a safe space for student concerns. A State Karate
+                    Champion, Judo Gold
+                    Medallist, NSS RDC participant, and former Oak House Captain, Soham blends discipline with
+                    compassion to inspire others
+                    to lead with honour.
+                </p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT4.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Aastik Acharya – Assistant Head Boy</h4>
+                <p>Aastik Acharya, a Grade 11 Commerce student at CISP, serves as the Assistant Head Boy and is known
+                    for his approachable
+                    and dependable nature. Often described as the “chill guy,” Aastik creates a safe and open space for
+                    dialogue, placing
+                    great value on honest communication and mutual respect. His responsibilities include bringing
+                    student concerns to the
+                    school authorities, informing peers about school decisions, and promoting discipline across the
+                    campus. His goals for
+                    the year revolve around engaging regularly with the student body, strengthening their voice in
+                    decision-making
+                    processes, and developing a digital platform to build a strong and connected alumni network.
+                    Aastik’s achievements
+                    include being named Best Delegate at the HAPS Model United Nations Conference 2025 and securing
+                    third position in the
+                    Inter-House School Debate 2025.</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT5.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Deeba Sharotri – Cultural Captain</h4>
+                <p>Deeba Sharotri, a Grade 12 Humanities student, is a focused and empathetic leader who values
+                    teamwork, aesthetics, and
+                    inclusivity. She helps students find their voice and build self-confidence. Her responsibilities
+                    include organizing
+                    school assemblies and student events, creating vibrant experiences, encouraging participation in
+                    creative platforms, and
+                    ensuring inclusive, visually pleasing event setups. Deeba aims to increase student engagement,
+                    provide more
+                    opportunities to showcase talents, and build a fun and welcoming environment. Her achievements
+                    include helping organize
+                    the 2025 Farewell, 2nd place in the GK Quiz, winning inter-house volleyball (2023, 2024),
+                    volunteering for NSS and
+                    Scouts and Guides, winning inter-house shot put (2022, 2023), and participating in soft board
+                    decoration (2025).</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT6.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Srishti Katoch – Cultural Captain</h4>
+                <p>Srishti Katoch, a Grade 12 Commerce student, is dedicated to promoting creativity and unity through
+                    cultural events. She
+                    inspires students by encouraging artistic expression and fostering a vibrant, inclusive school
+                    environment. Her
+                    responsibilities include coordinating cultural events, promoting participation, encouraging creative
+                    initiatives, and
+                    fostering inclusivity through diverse platforms. Srishti’s goals focus on building a welcoming
+                    cultural atmosphere,
+                    strengthening collaboration, and inspiring creativity and confidence. She has achieved 2nd position
+                    with high
+                    commendation at HAPSMUN 2025 and is an active member of The Ink writers (Media & Journalism Club).
+                </p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT7.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Dron Rishi – Sports Captain</h4>
+                <p>Dron Rishi, a Grade 12 Commerce student at CISP, is the Sports Captain and a dedicated leader
+                    passionate about teamwork,
+                    innovation, and student representation. In his role, he organizes school assemblies, leads
+                    inter-house competitions with
+                    fairness, and acts as a crucial link between the student body and faculty. His goals for the year
+                    focus on expanding
+                    student participation in sports, organizing open tournaments, ensuring access to quality equipment,
+                    and raising the
+                    school’s stature in sports. Dron’s notable achievements include winning the volleyball championship
+                    in 2024, consecutive
+                    victories in basketball, securing second place in badminton (2025), and being an active contributor
+                    to the Sports Club.</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT8.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Lavanya Bhatnagar – Linguistic Captain</h4>
+                <p>Lavanya Bhatnagar is a passionate Grade 12 Commerce student who champions language and communication
+                    as tools for
+                    inclusivity and confident expression. She promotes linguistic activities through events, workshops,
+                    debates, and writing
+                    competitions. Her goals focus on fostering a welcoming environment for linguistic engagement and
+                    ensuring every student
+                    feels heard without judgment. Lavanya inspires with her belief in the power of words to connect and
+                    transform.</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT9.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Akshara Rana – Linguistic Captain</h4>
+                <p>Akshara Rana, a Grade 12 Medical student, is a confident communicator and passionate language
+                    enthusiast who leads with
+                    clarity and creativity. She inspires peers to embrace language in speech and writing. Her duties
+                    include promoting
+                    reading and writing culture, guiding peers in language competitions, assisting in editing the school
+                    magazine,
+                    encouraging vocabulary and grammar improvement, and leading morning assembly speeches. Akshara’s
+                    goals are to foster a
+                    love for language and expression, organize literary events, encourage inter-school competition
+                    participation, and
+                    collaborate on the school magazine to showcase talent. Her achievements include representing Kangra
+                    district in Bal
+                    Vidhaan Sabha 2023, winning 1st position at district level in National Children’s Science Congress
+                    (NCSC), representing
+                    the district at State Level NCSC at IIT Mandi, scoring 93.6% in Class 10 boards, being an active NSS
+                    volunteer,
+                    selection for Republic Day Parade at district level, participation in MBM District Level Quiz, and
+                    membership in the
+                    Culinary Club.</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT10.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Shaurya Paul – Assistant Cultural Captain</h4>
+                <p>Shaurya Paul, a Grade 11 Humanities student, is a strong-willed and inclusive leader passionate about
+                    celebrating Indian
+                    culture and ensuring all voices are heard. As Assistant Cultural Secretary, he supports event
+                    planning, encourages
+                    student participation in cultural activities, and maintains program records. His goals include
+                    motivating students to
+                    join clubs and creative projects, acting as a liaison for cultural initiatives, and exploring
+                    collaborations with
+                    external artists. Assistant Shaurya’s achievements include winning the Inter-House Cultural
+                    Competition (2024–25) and
+                    active involvement in the Music Club.</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT11.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Swastik Rana – Assistant Sports Captain</h4>
+                <p>Swastik Rana, a Grade 11 Non-Medical student at CISP, serves as the Assistant Sports Captain and is
+                    known for his
+                    energy, discipline, and unwavering dedication to fitness and fair play. In his role, he assists in
+                    planning and
+                    organizing sports events, supports the Sports Captain in inter-house competitions, and promotes
+                    physical activity among
+                    students. His goals include fostering a strong sports culture, ensuring equal participation
+                    opportunities, encouraging
+                    teamwork and sportsmanship, and hosting a memorable annual sports day. Swastik also aims to
+                    introduce fun fitness
+                    challenges to keep students engaged year-round. His achievements include competing as a state-level
+                    table tennis player,
+                    participating in inter-house athletics, volunteering during the Annual Sports Day 2024, and being an
+                    active member of
+                    the Fitness Club.</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT12.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Mallicca Sharma – Assistant Linguistic Captain</h4>
+                <p>Mallicca Sharma, a Grade 11 Science student at CISP, is an approachable and organized council member
+                    who values
+                    teamwork, empathy, and passion in all her endeavours. As Assistant Linguistic Captain, she supports
+                    the Linguistic
+                    Captains, encourages respectful and appropriate language use across school platforms, helps promote
+                    language-related
+                    events, and fosters an inclusive environment. Her goals include enhancing communication within the
+                    school, uplifting
+                    student well-being, and strengthening participation in linguistic activities. Mallicca’s
+                    achievements include winning
+                    the inter-house basketball competitions in 2022 and 2023, receiving the Full Attendance Award in
+                    2023, securing second
+                    place in the interschool GK quiz, scoring 94.8% in the CBSE Grade 10 exams (2024), and being an
+                    active member of the
+                    Tech Titans Club.</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT13.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Saranshi – Assistant Linguistic Captain</h4>
+                <p>Saranshi, a Grade 11 Medical Stream student at CISP, serves as the Assistant Linguistic Captain and
+                    is known for her
+                    thoughtful expression, curiosity, and commitment to collaboration. She assists the Linguistic
+                    Captains, helps coordinate
+                    language-based competitions such as debates, spell bees, and writing contests, and contributes
+                    meaningfully to the
+                    Editorial Board by curating engaging student-focused content. Her goals include making language
+                    learning interactive and
+                    enjoyable, increasing student participation in literary activities, and promoting confident
+                    self-expression across the
+                    school. Her extensive list of achievements includes first place in the English Debate (2024), Best
+                    Delegate at IIMUN
+                    Kullu (2024), a Verbal Mention at HAPSMUN (2023), top positions in the Hindi and English Olympiads,
+                    second place in a
+                    science essay contest at Science Centre Palampur, third place in the Senior Science Quiz (2024), and
+                    being a two-time
+                    participant in the Children’s Science Congress.</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT14.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Parth Sood – House Captain, Cedar House</h4>
+                <p>Parth Sood, a Grade 12 Commerce student at CISP, leads as the House Captain of Cedar House. He is
+                    known for his focus,
+                    strategic thinking, and leadership rooted in integrity and discipline. Parth mentors house members,
+                    organizes and
+                    oversees inter-house competitions, represents student interests in council meetings, and promotes
+                    discipline and unity
+                    during school events. His goals for the year include fostering sportsmanship, encouraging
+                    participation in chess,
+                    badminton, and mind sports, building confidence in juniors, and striving to lead Cedar House to
+                    championship success.
+                    His accolades include winning the U19 Inter-School Kangra Chess Tournament, active participation in
+                    the school chess and
+                    badminton teams, and consistently strong performance in inter-house competitions.</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/STUDENT15.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h4>Swarit Awasthi – Assistant House Captain, Pine House</h4>
+                <p>Swarit Awasthi, a Grade 11 Science (PCM) student, is a dedicated and responsible leader who values
+                    teamwork, discipline,
+                    and innovation. He manages assembly roles and ensures fair participation in inter-house
+                    competitions. His goals
+                    emphasize promoting skill-based learning and motivating students to build new skills productively.
+                    Swarit’s achievements
+                    include winning the International Robotics Championship and being an active member of the School
+                    Robotics Team.</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- last-section footer -->
+    <div class="container-fluid sec-7">
+        <div class="row gy-5">
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>Important links</h1> -->
+                <ul class="list">
+                    <a href="book-list.html">Book-List</a>
+                    <a href="transfer-certificate.html"> Transfer Certificate</a>
+                    <a href="t&c.html">Terms & Conditions</a>
+                    <a href="SMC.html">School managing committee</a>
+                    <a href="student-classwise.html">No. of studnts Classwise</a>
+                    <a href="AA.html">Acedmic-Achievements</a>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>other links</h1> -->
+                <ul class="list">
+                    <a href="transport.html">Transport </a>
+                    <a href="about.html">About cambridge</a>
+                    <a href="time-table.html">Time-table</a>
+                    <a href="streams-offered.html">streams offered</a>
+                    <a href="student-council.html">school Alumini's</a>
+                    <a href="R&P.html">Rules & policies</a>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>other links</h1> -->
+                <ul class="list">
+                    <a href="#">Ministry of Education</a>
+                    <a href="#">Maintained by CBSE</a>
+                    <a href="#">Copyright of cambridge</a>
+                    <a href="#">Hyperlinking policy</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">CBSE portal</a>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.2822717167937!2d76.52590917543009!3d32.08865597395878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904b38ad4de1bf1%3A0x53662bc62c2a29ab!2sCambridge%20International%20School!5e0!3m2!1sen!2sin!4v1756272261465!5m2!1sen!2sin"
+                        width="auto" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css.css">
+    <style>
+        body {
+            background-color: rgb(9, 107, 134);
+        }
+
+        .fade {
+            font-size: 24px;
+            color: rgb(230, 228, 228);
+        }
+
+        .tab-content {
+            background-color: rgb(71, 30, 83);
+        }
+
+        .nav-tabs {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .show h4 {
+            font-size: 55px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-12 px-0">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">
+                        <img src="all-media/log.png" alt="Logo" height="40">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                        aria-controls="mobileMenu" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pay-fee.html">PAY FEE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Offcanvas Menu for Mobile -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="mobileMenuLabel">
+                            <img src="all-media/log.png" class="img-fluid" alt="Logo" height="40">
+                        </h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pay-fee.html">PAY FEE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Offcanvas -->
+            </div>
+        </div>
+    </header>
+    <!-- content box -->
+    <div class="container py-4">
+        <!-- Navigation Menu -->
+        <ul class="nav nav-tabs" id="facilityTabs" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active" id="classroom-tab" data-bs-toggle="tab" data-bs-target="#classroom"
+                    type="button" role="tab">
+                    School building
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="computer-tab" data-bs-toggle="tab" data-bs-target="#computer" type="button"
+                    role="tab">
+                    Computer Lab
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="science-tab" data-bs-toggle="tab" data-bs-target="#science" type="button"
+                    role="tab">
+                    Interactive classes
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="sports-tab" data-bs-toggle="tab" data-bs-target="#sports" type="button"
+                    role="tab">
+                    school labs
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content p-3 border border-top-0" id="facilityTabsContent">
+            <div class="tab-pane fade show active" id="classroom" role="tabpanel">
+                <h4>SCHOOL BUILDING</h4>
+                <p>
+                    <img src="all-media/SCHOOL-BUILDING.jpg" class="img-fluid">
+                <h4>Our Campus in Palampur</h4>
+                Nestled in the serene surroundings of Palampur, our campus offers a peaceful and inspiring
+                environment where students
+                thrive through healthy, safe, and nurturing outdoor play and educational activities.
+
+                Designed with a child’s future in mind, our architecturally distinctive campus features
+                state-of-the-art facilities and
+                modern technology that provide an ideal foundation for learning and growth.
+
+                Spacious, well-ventilated classrooms—each equipped with interactive whiteboards—are supported by a
+                robust, school-wide
+                Wi-Fi network, ensuring seamless integration of technology into everyday learning. In addition to
+                age-appropriate
+                learning spaces, our campus also includes dedicated specialist areas and expansive outdoor zones
+                that promote
+                exploration, creativity, and holistic development.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="computer" role="tabpanel">
+                <p>
+                <h4>Empowering Digital Pioneers</h4>
+                At CISP, we understand that digital literacy is no longer optional—it’s essential. Our fully equipped
+                computer labs are
+                designed to empower students with the skills and confidence to thrive in a technology-driven world.
+
+                Each lab is outfitted with up-to-date hardware, high-speed internet, and licensed software to support a
+                broad spectrum
+                of learning—from basic computer skills to advanced coding, graphic design, and data analysis. Students
+                are introduced to
+                the fundamentals of computing at an early stage and progressively engage with more complex digital tools
+                as they grow.
+
+                With a focus on practical learning, our computer labs provide hands-on experiences that enhance
+                problem-solving,
+                critical thinking, and creativity. Guided by experienced faculty, students learn to navigate technology
+                responsibly and
+                effectively, preparing them for academic success and future career readiness in an increasingly digital
+                landscape.
+                </p>
+                <p><img src="all-media/computer-ai-2.jpg" class="img-fluid">
+                <h3>Where Stories Spark Minds</h3>
+
+                Books open up a world of imagination, knowledge, and endless possibilities. At CISP, we believe that
+                reading not only
+                enriches life but also sharpens the mind and nurtures critical thinking. That’s why we place strong
+                emphasis on
+                cultivating a love for reading from an early age.
+
+                Our Library Programme is thoughtfully designed to spark curiosity and embed reading as a joyful habit.
+                Students are
+                introduced to a diverse collection of genres—from fiction and non-fiction to poetry, biographies, and
+                more—helping them
+                explore, experience, and discover what truly resonates with them.
+
+                To make reading even more engaging, the programme includes a variety of interactive and creative
+                follow-up activities
+                such as book narrations, fun worksheets, bookmark and poster making, literary competitions, and
+                discussions. These
+                experiences not only encourage deeper comprehension but also empower students to express their thoughts
+                with clarity and
+                confidence.
+
+                At CISP, the library is more than a room full of books—it’s a vibrant space where young minds grow,
+                reflect, and find
+                their voice through the written word.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="science" role="tabpanel">
+                <p><img src="all-media/computer-ai -1.png">
+                <h4>Smart Classrooms for Smarter Learning</h4>
+                At CISP, we embrace the power of digital transformation in education. Our Smart Classrooms, equipped
+                with modern
+                technology and interactive tools, create a dynamic and engaging learning environment where students
+                grasp concepts with
+                clarity and enjoy the process of discovery.
+
+                Digital classrooms do more than just modernize education—they revolutionize it. By combining
+                multimedia content with
+                real-time interaction, they make learning more visual, memorable, and enjoyable. These spaces are
+                especially effective
+                in nurturing young minds, helping students retain knowledge effortlessly while stimulating curiosity
+                and creativity.
+
+                For teachers, digital classrooms open new possibilities for crafting engaging lessons using
+                multimedia resources,
+                visuals, and simulations. This shift not only enhances lesson delivery but also reshapes the way
+                students perceive
+                learning—making it exciting, immersive, and far less of a burden.</p>
+            </div>
+            <div class="tab-pane fade" id="sports" role="tabpanel">
+                <h4>School labs</h4>
+                <p><img src="all-media/school-lab.jpg">
+                <h4>Where Curiosity Meets Discovery</h4>
+                At CISP, we believe that future Nobel laureates are not just shaped in grand research institutions—but
+                nurtured in the
+                foundational spaces of school laboratories. Our labs are designed to bring learning to life, offering
+                students the
+                opportunity to explore, experiment, and discover knowledge through hands-on experiences.
+
+                Equipped with modern tools and technology, CISP’s laboratories serve as vital hubs of inquiry and
+                innovation. They not
+                only support the academic curriculum but also foster critical thinking, problem-solving, and practical
+                understanding.
+                Every student is provided with the resources and guidance needed to transform theoretical concepts into
+                tangible
+                learning—ensuring they don’t just study science, but truly experience it.</p>
+            </div>
+        </div>
+    </div>
+    <!-- last-section footer -->
+    <div class="container-fluid sec-7">
+        <div class="row gy-5">
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>Important links</h1> -->
+                <ul class="list">
+                    <a href="book-list.html">Book-List</a>
+                    <a href="transfer-certificate.html"> Transfer Certificate</a>
+                    <a href="t&c.html">Terms & Conditions</a>
+                    <a href="SMC.html">School managing committee</a>
+                    <a href="student-classwise.html">No. of studnts Classwise</a>
+                    <a href="AA.html">Acedmic-Achievements</a>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>other links</h1> -->
+                <ul class="list">
+                    <a href="transport.html">Transport </a>
+                    <a href="about.html">About cambridge</a>
+                    <a href="time-table.html">Time-table</a>
+                    <a href="streams-offered.html">streams offered</a>
+                    <a href="student-council.html">school Alumini's</a>
+                    <a href="R&P.html">Rules & policies</a>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>other links</h1> -->
+                <ul class="list">
+                    <a href="#">Ministry of Education</a>
+                    <a href="#">Maintained by CBSE</a>
+                    <a href="#">Copyright of cambridge</a>
+                    <a href="#">Hyperlinking policy</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">CBSE portal</a>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.2822717167937!2d76.52590917543009!3d32.08865597395878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904b38ad4de1bf1%3A0x53662bc62c2a29ab!2sCambridge%20International%20School!5e0!3m2!1sen!2sin!4v1756272261465!5m2!1sen!2sin"
+                        width="auto" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

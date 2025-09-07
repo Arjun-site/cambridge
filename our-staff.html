@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css.css">
+    <style>
+        body {
+            background-color: rgb(164, 164, 9);
+        }
+
+        .HEAD {
+            font-size: 50px;
+            color: rgb(243, 237, 234);
+            background-color: rgb(144, 66, 7);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 10px;
+            font-weight: 700;
+        }
+
+        .container h2 {
+            font-weight: 600;
+            color: rgb(230, 136, 13)
+        }
+
+        .bor {
+            border: 2px solid black;
+            padding: 20px 5px;
+            background-color: rgb(78, 21, 112);
+            color: rgb(209, 197, 197);
+        }
+
+        .profile-img {
+            max-width: 100%;
+            max-height: 500px;
+            padding: 20px 0px;
+            border-radius: 10px;
+            object-fit: cover;
+            /* Rounded corners */
+        }
+
+        @media (min-width:1245px) {
+            .container p {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-12 px-0">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">
+                        <img src="all-media/log.png" alt="Logo" height="40">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                        aria-controls="mobileMenu" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pay-fee.html">PAY FEE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Offcanvas Menu for Mobile -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="mobileMenuLabel">
+                            <img src="all-media/log.png" class="img-fluid" alt="Logo" height="40">
+                        </h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pay-fee.html">PAY FEE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Offcanvas -->
+            </div>
+        </div>
+    </header>
+    <!-- content box -->
+    <div class="container HEAD">OUR CAMBRIDGE STAFF</div>
+    <div class="container mt-4">
+        <!-- Row with photo and message -->
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/SUDHA-THAKUR.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm SUDHA THAKUR !</h2>
+                <p>Ms. Sudha Thakur is Middle Year Group Coordinator and PGT Mathematics at Cambridge International
+                    School, Palampur. She
+                    holds a Master of Science degree and a Bachelor of Education, with 10 years of teaching experience.
+                    Joining the school
+                    in March 2017, she has contributed as a Class Teacher, House Mentor, HOD Mathematics, and Academic
+                    Coordinator for
+                    Grades 1–8. She has attended workshops on Blooms Taxonomy, Vedic Mathematics, EI Cares, and others.
+                    In her free time,
+                    Sudha enjoys driving, gardening, and reading books.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm SWATI PATHANIA !</h2>
+                <p>Ms. Swati Pathania is a Middle Year Group teacher at Cambridge International School, Palampur. She
+                    holds an M.Sc. in
+                    Physics and a B.Ed., with 8.5 years of teaching experience. Since joining the school in April 2018,
+                    she has served as
+                    the Academic Coordinator for Grades 1 to 8 (2018–2022), HOD of Science, and House Mentor. She has
+                    also led CBSE duties,
+                    National Science Congress, Inspire Manak, and science-related tasks. She has attended workshops
+                    organised by the school.
+                    In her free time, Swati enjoys listening to music and reading books.</p>
+            </div>
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/SWATI-PATHANIA.jpg" alt="Profile" class="profile-img">
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/SITAL-BHARDWAJ.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm SITAL BHARDWAJ !</h2>
+                <p>Ms. Sital Bhardwaj is a Middle Year group Teacher and CCA Coordinator at Cambridge International
+                    School, Palampur. She
+                    holds a Bachelor’s in Zoology(Honours), a Certificate in Clinical and Child Nutrition, an NTT (2
+                    years), a Basic
+                    Computer Course, and is pursuing a Post Graduate in Nutrition. With 9 years of experience, she
+                    joined CISP in 2021. She
+                    has served as a House Mentor, Deputy CCA, and Deputy NSS. Ms. Bhardwaj participates in all
+                    school-organised workshops.
+                    In her free time, she enjoys reading and listening to music.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm SHWANI BHARDWAJ !</h2>
+                <p>Ms. Shiwani Nag is a Middle Year Group Teacher at Cambridge International School, Palampur. She holds
+                    an MPhil and a
+                    B.Ed., with 16 years of experience teaching Hindi. Since joining the school in March 2017, she has
+                    contributed as a CCA
+                    Coordinator for two years, a House Mentor, and the Head of the Hindi Department. During her tenure,
+                    she has attended
+                    workshops on Classroom Management Techniques, Pedagogical Development, and Teacher Wellbeing
+                    Programs. In her free time,
+                    Shiwani enjoys reading books and traveling.</p>
+            </div>
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/SHWANI-BHARDWAJ.jpg" alt="Profile" class="profile-img">
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/SHILPI-SHARMA.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm SHILPI SHARMA !</h2>
+                <p>Ms. Shilpi Sharma is Middle Year Group Teacher at Cambridge International School, Palampur. She holds
+                    a Master’s degree
+                    in Chemistry and a B.Ed., with 15 years of teaching experience in science. Since joining the school
+                    in March 2015, she
+                    has enhanced students; learning through hands-on laboratory experiments. She has attended training
+                    sessions on
+                    inquiry-based learning and virtual science workshops. In her free time, Shilpi enjoys photography
+                    and exploring nature
+                    trails.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm SARLA DOGRA !</h2>
+                <p>Ms. Sarla Dogra is Foundation Year Group Teacher at Cambridge International School, Palampur. She
+                    holds a Master’s
+                    degree in Sanskrit and a Bachelor of Education, with 17 years of teaching experience. Since joining
+                    the school in May
+                    2015, she has served as a House Mentor and the CCA Coordinator. She has attended workshops on
+                    Bloom’s Taxonomy, EI
+                    Cares, Cambridge University Press, and Engage and Evolve by Indiannica Learning, among others. In
+                    her free time, Sarla
+                    enjoys singing, gardening, and cooking.</p>
+            </div>
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/SARLA-DOGRA.jpg" alt="Profile" class="profile-img">
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/ROHINI-KATOCH.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm ROHINI KATOCH !</h2>
+                <p>Ms. Rohini Katoch is a Dance Teacher at Cambridge International School, Palampur. She holds a
+                    Master’s Degree in
+                    Visharath Classical Kathak from Lucknow Bhartkhande University and has over 27 years of experience
+                    in dancing. Joining
+                    the school in March 2019, she has attended various workshops organised by the school management. In
+                    her free time,
+                    Rohini enjoys cooking, dancing, listening to music, and traveling.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm RIJUL DOGRA !</h2>
+                <p>Mr. Rijul Dogra is Middle Year Group Teacher at Cambridge International School, Palampur. He holds a
+                    Master’s Degree in
+                    Sanskrit and a Bachelor of Education degree (Vishishta Shashtri). He is CTET-qualified 2019 and HP
+                    TET-qualified (2016,
+                    2019) and has 7 years of experience teaching Sanskrit. Joining the school in March 2017, he has
+                    contributed as a Class
+                    Teacher, NSS Deputy, and Bharat Scouts and Guides Deputy. During his tenure, he has attended
+                    workshops on Blooms
+                    Taxonomy, EI Cares, Cambridge University Press, and Engage and Evolve by Indiannica Learning. In his
+                    free time, Mr.
+                    Rijul Dogra enjoys driving, gardening, reading books, watching movies, and playing cricket.</p>
+            </div>
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/RIJUL-DOGRA.png" alt="Profile" class="profile-img">
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/KOMAL-MARWAHAM.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm KOMAL MARWAHAM !</h2>
+                <p>Ms. Komal Marwaha is the Foundation Year Group Coordinator at Cambridge International School,
+                    Palampur. She holds a
+                    Bachelor of Arts degree and has over 16 years of experience as a pre-primary teacher. She joined
+                    CISP in March 2016 and
+                    has made significant contributions, including representing the school as an ISA Coordinator. During
+                    her tenure, the
+                    school was accredited with the prestigious ISA award. In her free time, Ms. Marwaha enjoys baking,
+                    painting, and
+                    engaging in craftwork.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm KIRTI DHIMAN !</h2>
+                <p>Ms. Kirti Dhiman is a Foundation Year Group Teacher at Cambridge International School, Palampur. She
+                    holds a Master’s in
+                    Education, B.Ed., B.A., and is TET-qualified. With 7 years of experience as a Primary and
+                    Pre-primary teacher, she
+                    joined the school in March 2023. Kirti has participated in multiple NSS camps and attended various
+                    teacher training
+                    workshops organised by the school. In her free time, Kirti enjoys singing, exploring new places,
+                    dancing, and crafting.
+                </p>
+            </div>
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/KIRTI-DHIMAN.jpg" alt="Profile" class="profile-img">
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/GOURAV-RAINA.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm GOURAV RAINA !</h2>
+                <p>Mr. Gaurav Raina
+                    Mr. Gaurav Raina is Senior Year Group Teacher at Cambridge International School, Palampur. He holds
+                    an M.Sc., M.Phil.
+                    (Organic Chemistry), and B.Ed., with 11 years of teaching experience and 3 years in research. Under
+                    his mentorship, two
+                    students were selected for MBBS (Government Colleges), one for BDS, and two for the State-Level
+                    Children Science
+                    Congress, representing the school at IIT Mandi and NIT Hamirpur. He has attended CBSE workshops and
+                    training on NEP,
+                    classro management, Bloom’s Taxonomy, 21st-century educational skills, and more via the DIKSHA App.
+                    In his free time, he
+                    enjoys playing cricket.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm DURGA MEHRA !</h2>
+                <p>Durga Mehra is the Front Office Executive at Cambridge International School, Palampur. She holds an
+                    M.A. in English,
+                    M.A. in Political Science, NTT, PGDCA, ICPA Diploma in Accounting, and a Diploma in Tally ERP 9.3.
+                    She has 12 years of
+                    experience and joined the school in March 2017. In her free time, she enjoys watching cartoons,
+                    exploring new places,
+                    listening to music, dancing, cooking, and spending time with her family.</p>
+            </div>
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/DURGA.jpg" alt="Profile" class="profile-img">
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/DEEPIKA-SHARMA.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm DEEPIKA SHARMA !</h2>
+                <p>Ms. Deepika Sharma
+                    Ms. Deepika Sharma is Senior Year group Teacher at Cambridge International School, Palampur. She
+                    holds a BA and MA in
+                    English Literature, a B.Ed., a PG Diploma in Business Administration (HR and PR), and certificates
+                    in French and
+                    Sinhalese. With nearly 12 years of teaching experience, she joined CISP in March 2021. As the AFS
+                    Coordinator, she
+                    organises student participation in national AFS activities and attended the MU20 Summit in Indore,
+                    earning a Certificate
+                    of Appreciation as Faculty Advisor. Ms. Deepika has led students in English Olympiads, debates,
+                    quizzes, and essay
+                    competitions. She actively participates in teacher development workshops. In her free time, she
+                    enjoys reading and
+                    listening to soulful music</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm BONU RAM !</h2>
+                <p>Bonu Ram is the Accountant at Cambridge International School, Palampur. He holds an M.A. in Political
+                    Science, DCA, and
+                    a Diploma in Tally. He has 18 years of experience and joined the school in June 2015. In his free
+                    time, he enjoys
+                    reading books and spending time with his family.</p>
+            </div>
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/BONU-RAM.jpg" alt="Profile" class="profile-img">
+            </div>
+        </div>
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/AKANKSHA-SHARMA.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm AKANKSHA SHARMA !</h2>
+                <p>Ms. Akanksha Sharma is a Music Teacher at Cambridge International School, Palampur. She holds an M.A.
+                    in Music from
+                    Himachal Pradesh University and a six-year Prabhakar degree from Allahabad. With 16 years of
+                    experience in the music
+                    field, she joined the school in September 2019. During her tenure, she has attended various
+                    workshops organised by the
+                    school management. In her free time, Akanksha enjoys painting, dancing, listening to music, and
+                    acting.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-4 bor">
+            <div class="col-md-8 col-12">
+                <h2>Hello, I'm ABHISHEK KUMAR !</h2>
+                <p>Abhishek Kumar is the Web Designer at Cambridge International School, Palampur. He holds a Diploma in
+                    Electrical
+                    Engineering, a Diploma in Web and Graphics, and a Diploma in Computer Hardware and Networking. He
+                    has 9 years of
+                    experience and joined the school in June 2022. In his free time, he enjoys trying different types of
+                    recipes.</p>
+            </div>
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/ABHISHEK-KUMAR-AK.jpg" alt="Profile" class="profile-img">
+            </div>
+        </div>
+
+    </div>
+    <!-- last-section footer -->
+    <div class="container-fluid sec-7">
+        <div class="row gy-5">
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>Important links</h1> -->
+                <ul class="list">
+                    <a href="book-list.html">Book-List</a>
+                    <a href="transfer-certificate.html"> Transfer Certificate</a>
+                    <a href="t&c.html">Terms & Conditions</a>
+                    <a href="SMC.html">School managing committee</a>
+                    <a href="student-classwise.html">No. of studnts Classwise</a>
+                    <a href="AA.html">Acedmic-Achievements</a>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>other links</h1> -->
+                <ul class="list">
+                    <a href="transport.html">Transport </a>
+                    <a href="about.html">About cambridge</a>
+                    <a href="time-table.html">Time-table</a>
+                    <a href="streams-offered.html">streams offered</a>
+                    <a href="student-council.html">school Alumini's</a>
+                    <a href="R&P.html">Rules & policies</a>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12 link-1">
+            <!-- <h1>other links</h1> -->
+            <ul class="list">
+                <a href="#">Ministry of Education</a>
+                <a href="#">Maintained by CBSE</a>
+                <a href="#">Copyright of cambridge</a>
+                <a href="#">Hyperlinking policy</a>
+                <a href="#">Testimonials</a>
+                <a href="#">CBSE portal</a>
+            </ul>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12 link-1">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.2822717167937!2d76.52590917543009!3d32.08865597395878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904b38ad4de1bf1%3A0x53662bc62c2a29ab!2sCambridge%20International%20School!5e0!3m2!1sen!2sin!4v1756272261465!5m2!1sen!2sin"
+                    width="auto" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

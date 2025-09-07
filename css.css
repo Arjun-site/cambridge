@@ -1,0 +1,383 @@
+/* body and html */
+body,
+html {
+    overflow-x: hidden;
+}
+
+/* 1st section navbar*/
+.navbar {
+    background-color: rgb(23, 31, 76);
+    height: 120px;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-brand img {
+    width: auto;
+    height: 10vh;
+}
+
+.nav-item {
+    margin-right: 25px;
+}
+
+.nav-link {
+    color: rgb(243, 110, 8);
+    font-size: 20px;
+    text-wrap: nowrap;
+
+}
+
+.nav-link a {
+    gap: 40px;
+}
+
+.offcanvas-header {
+    background-color: rgb(23, 31, 76);
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+@media (min-width:1245px) {
+    .nav-link {
+        color: rgb(243, 110, 8);
+        font-size: 30px;
+        text-wrap: nowrap;
+
+    }
+}
+
+/* 2nd section video */
+.vid {
+    width: 100%;
+    /* white space ban rha tha so remove*/
+}
+
+/* 3rd section */
+#about-school h1 {
+    font-size: 55px;
+}
+
+#about-schoolh2 {
+    font-size: 35px;
+}
+
+#about-school p {
+    font-size: 25px;
+}
+
+#three {
+    background-color: rgb(41, 11, 93);
+}
+
+#about-school {
+    text-align: justify;
+}
+
+.major img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    #about-school h1,
+    #about-school h2 {
+        text-align: center;
+    }
+
+    #rm {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1245px) {
+
+    /* 3rd section */
+    #three {
+        margin-top: 0;
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+}
+
+/* 4th section */
+.four {
+    background-color: rgb(43, 9, 60);
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(3, 150, 18);
+}
+
+.btn {
+    color: white;
+}
+
+.first {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(56, 9, 73);
+    color: white
+}
+
+.photo {
+    padding: 20px 40px;
+}
+
+.photo img {
+
+    height: 450px;
+    width: 65%;
+    object-fit: cover;
+}
+
+.staff {
+    background-color: rgb(62, 16, 66);
+    color: rgb(251, 247, 4);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: algerian;
+}
+
+@media (max-width:1245px) {
+
+    .photo img {
+        height: 250px;
+        width: 70%;
+        object-fit: cover;
+    }
+
+    .first {
+        padding: 0px;
+    }
+
+    .photo {
+        padding: 10px 10px;
+
+    }
+
+    .staff {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:992px) {
+
+    .photo img {
+        height: 200px;
+        width: auto;
+        object-fit: cover;
+    }
+
+    .first {
+        padding: 20px;
+
+    }
+
+    .photo {
+        padding: 10px 10px;
+
+    }
+}
+
+@media (min-width: 1245px) {
+    .photo img {
+        height: 300px;
+        width: auto;
+        object-fit: cover;
+    }
+
+    .first {
+        padding: 10px;
+
+    }
+
+    .photo {
+        padding: 10px 10px;
+
+    }
+}
+
+/* 5th section */
+.section-5 {
+    padding: 20px 40px;
+    text-align: center;
+    background-color: rgb(66, 22, 110);
+    color: white;
+}
+
+.hight {
+    height: 380px;
+}
+
+.hight h1 {
+    font-size: 50px;
+
+}
+
+.pix {
+    padding-top: 45px;
+}
+
+.pix img {
+    height: 20%;
+}
+
+@media (max-width:1245px) {
+    .hight {
+        height: auto;
+    }
+
+    .pix {
+        height: 260px;
+        padding-top: 40px;
+
+    }
+
+    .pix img {
+        height: 40%;
+    }
+
+    .hight h1 {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .hight {
+        height: 680px;
+    }
+
+    .pix {
+        height: 40%;
+        padding-top: 20px;
+    }
+
+    .hight h1 {
+        font-size: 30px;
+
+    }
+}
+
+@media(max-width:576px) {
+    .hight {
+        height: auto;
+    }
+
+    .pix {
+        height: 200px;
+        padding-top: 10px;
+
+    }
+
+    .pix img {
+        height: 30%;
+    }
+
+    .hight h1 {
+        font-size: 30px;
+    }
+}
+
+/* 6th  */
+.section-6 {
+    padding: 20px 200px;
+    background-color: rgb(218, 208, 90);
+}
+
+
+
+.form-container {
+    max-width: 600px;
+    background: rgb(179, 151, 102);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(12, 12, 12, 0.1);
+}
+
+.form-control {
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+
+}
+
+textarea.form-control {
+    height: auto;
+    min-height: 120px;
+}
+
+.btn-custom {
+    height: 60px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+/* calender */
+
+.notification-box {
+    height: 720px;
+
+    /* Show approx 7 notifications (10 * 40px) */
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.notification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notification-item {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    /* border-bottom: 1px solid #1e0445; */
+    transition: transform 0.5s ease;
+}
+
+@media (max-width:1245px) {
+    .section-6 {
+        padding: 20px 50px;
+    }
+
+}
+
+/* last footer */
+.sec-7 {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: rgb(21, 21, 20);
+
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    text-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+.list a {
+    color: white;
+}

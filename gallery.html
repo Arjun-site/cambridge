@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css.css">
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(216, 236, 64);
+        }
+
+        .gallery {
+            font-size: 60px;
+            font-weight: 600;
+            margin-top: 20px;
+            text-align: center;
+            color: rgb(248, 247, 247);
+            background-color: rgb(103, 7, 111);
+            border: 2px solid black;
+        }
+
+        .gallery-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-img {
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2.gallery-title {
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-12 px-0">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">
+                        <img src="all-media/log.png" alt="Logo" height="40">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                        aria-controls="mobileMenu" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pay-fee.html">PAY FEE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Offcanvas Menu for Mobile -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="mobileMenuLabel">
+                            <img src="all-media/log.png" class="img-fluid" alt="Logo" height="40">
+                        </h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pay-fee.html">PAY FEE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Offcanvas -->
+            </div>
+        </div>
+    </header>
+    <!-- content box -->
+    <div class="container gallery">GALLERY</div>
+    <div class="container my-5">
+        <div class="gallery-container">
+            <h2 class="gallery-title text-center">🖼️ CAMBRIDGE GALLERY</h2>
+            <div class="row g-4">
+
+                <!-- Image 1 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (49).png" data-lightbox="mygallery" data-title="Image 1">
+                        <img src="all-media/Screenshot (49).png" class="img-fluid gallery-img" alt="Image 1">
+                    </a>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (50).png" data-lightbox="mygallery" data-title="Image 2">
+                        <img src="all-media/Screenshot (50).png" class="img-fluid gallery-img" alt="Image 2">
+                    </a>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (51).png" data-lightbox="mygallery" data-title="Image 3">
+                        <img src="all-media/Screenshot (51).png" class="img-fluid gallery-img" alt="Image 3">
+                    </a>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (52).png" data-lightbox="mygallery" data-title="Image 4">
+                        <img src="all-media/Screenshot (52).png" class="img-fluid gallery-img" alt="Image 4">
+                    </a>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (53).png" data-lightbox="mygallery" data-title="Image 5">
+                        <img src="all-media/Screenshot (53).png" class="img-fluid gallery-img" alt="Image 5">
+                    </a>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (54).png" data-lightbox="mygallery" data-title="Image 6">
+                        <img src="all-media/Screenshot (54).png" class="img-fluid gallery-img" alt="Image 6">
+                    </a>
+                </div>
+
+                <!-- Image 7 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (55).png" data-lightbox="mygallery" data-title="Image 7">
+                        <img src="all-media/Screenshot (55).png" class="img-fluid gallery-img" alt="Image 7">
+                    </a>
+                </div>
+                <!-- Image 8-->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (56).png" data-lightbox="mygallery" data-title="Image 8">
+                        <img src="all-media/Screenshot (56).png" class="img-fluid gallery-img" alt="Image 8">
+                    </a>
+                </div>
+                <!-- Image 9 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (58).png" data-lightbox="mygallery" data-title="Image 9">
+                        <img src="all-media/Screenshot (58).png" class="img-fluid gallery-img" alt="Image 9">
+                    </a>
+                </div>
+                <!-- Image 10 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (59).png" data-lightbox="mygallery" data-title="Image 10">
+                        <img src="all-media/Screenshot (59).png" class="img-fluid gallery-img" alt="Image 10">
+                    </a>
+                </div>
+                <!-- Image 11 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (60).png" data-lightbox="mygallery" data-title="Image 11 ">
+                        <img src="all-media/Screenshot (60).png" class="img-fluid gallery-img" alt="Image 11">
+                    </a>
+                </div>
+                <!-- Image 12 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (61).png" data-lightbox="mygallery" data-title="Image 12">
+                        <img src="all-media/Screenshot (61).png" class="img-fluid gallery-img" alt="Image 12">
+                    </a>
+                </div>
+                <!-- Image 13 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (62).png" data-lightbox="mygallery" data-title="Image 13">
+                        <img src="all-media/Screenshot (62).png" class="img-fluid gallery-img" alt="Image 13">
+                    </a>
+                </div>
+                <!-- Image 14 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (63).png" data-lightbox="mygallery" data-title="Image 14">
+                        <img src="all-media/Screenshot (63).png" class="img-fluid gallery-img" alt="Image 14">
+                    </a>
+                </div>
+                <!-- Image 15 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (68).png" data-lightbox="mygallery" data-title="Image 15">
+                        <img src="all-media/Screenshot (68).png" class="img-fluid gallery-img" alt="Image 15">
+                    </a>
+                </div>
+                <!-- Image 16 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (65).png" data-lightbox="mygallery" data-title="Image 16 ">
+                        <img src="all-media/Screenshot (65).png" class="img-fluid gallery-img" alt="Image 16">
+                    </a>
+                </div>
+                <!-- Image 17 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/screenshot-66.jpg" data-lightbox="mygallery" data-title="Image 17">
+                        <img src="all-media/screenshot-66.jpg" class="img-fluid gallery-img" alt="Image 17">
+                    </a>
+                </div>
+                <!-- image-18 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/Screenshot (67).png" data-lightbox="mygallery" data-title="Image 18">
+                        <img src="all-media/Screenshot (67).png" class="img-fluid gallery-img" alt="Image 18">
+                    </a>
+                </div>
+                <!-- image-19 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/screenshot69.jpg" data-lightbox="mygallery" data-title="Image 19">
+                        <img src="all-media/screenshot69.jpg" class="img-fluid gallery-img" alt="Image 19">
+                    </a>
+                </div>
+                <!-- image-20 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="all-media/screenshot-70.jpg" data-lightbox="mygallery" data-title="Image 20">
+                        <img src="all-media/screenshot-70.jpg" class="img-fluid gallery-img" alt="Image 20">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- last-section footer -->
+    <div class="container-fluid sec-7">
+        <div class="row gy-5">
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>Important links</h1> -->
+                <ul class="list">
+                    <a href="book-list.html">Book-List</a>
+                    <a href="transfer-certificate.html"> Transfer Certificate</a>
+                    <a href="t&c.html">Terms & Conditions</a>
+                    <a href="SMC.html">School managing committee</a>
+                    <a href="student-classwise.html">No. of studnts Classwise</a>
+                    <a href="AA.html">Acedmic-Achievements</a>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>other links</h1> -->
+                <ul class="list">
+                    <a href="transport.html">Transport </a>
+                    <a href="about.html">About cambridge</a>
+                    <a href="time-table.html">Time-table</a>
+                    <a href="streams-offered.html">streams offered</a>
+                    <a href="student-council.html">school Alumini's</a>
+                    <a href="R&P.html">Rules & policies</a>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>other links</h1> -->
+                <ul class="list">
+                    <a href="#">Ministry of Education</a>
+                    <a href="#">Maintained by CBSE</a>
+                    <a href="#">Copyright of cambridge</a>
+                    <a href="#">Hyperlinking policy</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">CBSE portal</a>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.2822717167937!2d76.52590917543009!3d32.08865597395878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904b38ad4de1bf1%3A0x53662bc62c2a29ab!2sCambridge%20International%20School!5e0!3m2!1sen!2sin!4v1756272261465!5m2!1sen!2sin"
+                        width="auto" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+</html>

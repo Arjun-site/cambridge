@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css.css">
+    <style>
+        body {
+            background-color: rgb(164, 164, 9);
+        }
+
+        .HEAD {
+            font-size: 50px;
+            color: rgb(243, 237, 234);
+            background-color: rgb(144, 66, 7);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 10px;
+            font-weight: 700;
+        }
+
+        .container h2 {
+            font-weight: 600;
+            color: rgb(230, 136, 13)
+        }
+
+        .bor {
+            border: 2px solid black;
+            padding: 20px 5px;
+            background-color: rgb(78, 21, 112);
+            color: rgb(209, 197, 197);
+        }
+
+        .profile-img {
+            max-width: 100%;
+            max-height: 500px;
+
+            border-radius: 10px;
+            object-fit: cover;
+            /* Rounded corners */
+        }
+
+        @media (min-width:1245px) {
+            .container p {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-12 px-0">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">
+                        <img src="all-media/log.png" alt="Logo" height="40">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                        aria-controls="mobileMenu" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pay-fee.html">PAY FEE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Offcanvas Menu for Mobile -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="mobileMenuLabel">
+                            <img src="all-media/log.png" class="img-fluid" alt="Logo" height="40">
+                        </h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pay-fee.html">PAY FEE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Offcanvas -->
+            </div>
+        </div>
+    </header>
+    <!-- content box -->
+    <div class="container HEAD">SCHOOL MANAGEMENT</div>
+    <div class="container mt-4 ">
+        <!-- Row with photo and message -->
+        <div id="chairman" class="row align-items-center mb-4 bor">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/chairmenn.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12 ">
+                <h2>Sanjiv Sharma</h2>
+                <h3>Chairman</h3>
+                <h4>Dear Prospective Parents and Students,</h4>
+                <p>To achieve this vision, we provide your child with state-of-the-art infrastructure, an
+                    internationally benchmarked
+                    standard of education, and a team of well-trained, passionate educators. Our curriculum is designed
+                    to be flexible and
+
+
+                    As we move forward, I am confident that with your continued support, our shared vision, and the
+                    blessings of God, we
+                    will achieve many milestones and bring our aspirations to fruition.
+
+                    Under the guidance of our dynamic Principal and a dedicated team of experienced and passionate
+                    teachers, CISP is
+                    committed to navigating this journey with excellence. The support and mentorship we receive from our
+                    flagship school in
+                    Kullu further strengthen our mission to deliver a world-class educational experience for every
+                    child.
+
+                    We are confident that CISP is the ideal environment for your child to thrive. Your active
+                    involvement and encouragement
+                    in your child’s journey with us are always welcome, as together, we can create a foundation for
+                    lifelong success.
+                    Thank you for entrusting us with the privilege of shaping your child’s future.
+
+                    With warm regards and best wishes,Sanjiv Sharma Chairman</p>
+            </div>
+        </div>
+
+        <div id="vice-chairman" class="row align-items-center mb-4 bor ">
+            <div class="col-md-8 col-12">
+                <h2>Ms. Priya Kapil</h2>
+                <h3>vice-chairman</h3>
+                <h4>Dear Prospective Parents and Students,</h4>
+                <p>We promote educational pedagogies which make every child say, “I have better ideas, I am talented,
+                    skilled and
+                    creative!” and develop educators who would say “I wish to work miracles with my students.” Our
+                    endeavour has been to
+                    create an environment that will enlighten, encourage, and inspire the dreams of the students and the
+                    faculty who enter
+                    the portals of CAMBRIDGE INTERNATIONAL SCHOOL, aspiring to be future leaders in their interest areas
+                    with new ideas and
+                    innovations.
+
+
+                    reinforcement at every step of a child. We encourage constant interaction among the students,
+                    teachers, parents and the
+                    community to gain an understanding and develop rapport which creates quality learning environment.
+
+                    We promise to walk the talk and ensure holistic development for every student entrusted to our care.
+                    We assure you that
+                    we will work always towards positive transformation during our journey in transacting quality
+                    education. We would be
+                    most honoured to be partners in meeting your aspirations for your child. I wish you and your child,
+                    the very best.
+
+                    Welcome to the CAMBRIDGE Family!</p>
+            </div>
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/Managing-Director.jpg" alt="Profile" class="profile-img">
+            </div>
+        </div>
+
+        <div id="principal" class="row align-items-center mb-4 bor ">
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/Principall.jpg" alt="Profile" class="profile-img">
+            </div>
+            <div class="col-md-8 col-12">
+                <h2>Mr.Amit Gupta</h2>
+                <h3>Principal</h3>
+                <h4>Dear Prospective Parents and Students,</h4>
+                <p>As the Head of the School, my note to both staff & students are simple and clear that may all our
+                    lessons, our
+                    responsibilities, our vows, our words, and actions be geared towards touching hearts & changing
+                    lives.
+
+                    human being who are emotionally stable, intellectually vibrant, spiritually
+                    enlightened and
+                    socially committed.
+
+                    We promote educational pedagogies which make every child say, “I have better ideas, I am talented,
+                    skilled and
+                    creative!” and develop educators who would say “I wish to work miracles with my students.” Our
+                    endeavour has been to
+                    create an environment that will enlighten, encourage, and inspire the dreams of the students and the
+                    faculty who enter
+                    the portals of CAMBRIDGE INTERNATIONAL SCHOOL, aspiring to be future leaders in their interest areas
+                    with new ideas and
+                    innovations.
+
+                    Our infrastructure provisions are such that it develops the ability to become the producers of
+                    knowledge instead of just
+                    being consumers of knowledge. Our good practices help teachers to set realistic goals at all levels
+                    to give positive
+                    reinforcement at every step of a child. We encourage constant interaction among the students,
+                    teachers, parents and the
+                    community to gain an understanding and develop rapport which creates quality learning environment.
+                </p>
+            </div>
+        </div>
+
+        <div id="director" class="row align-items-center mb-4 bor">
+            <div class="col-md-8 col-12">
+                <h2>Ms. Ritu Bhardwaj</h2>
+                <h3>Director</h3>
+                <h4>Dear Prospective Parents and Students,</h4>
+                <p>The fast evolving and new emerging society now look for responsible citizens with local and global
+                    perspectives in
+                    respect to our valuable diversity. It has been our effort to fill the gap and create a curriculum
+                    that will turn our
+                    students into a holistic human being who are emotionally stable, intellectually vibrant, spiritually
+                    enlightened and
+                    socially committed.
+
+
+
+                    Our infrastructure provisions are such that it develops the ability to become the producers of
+                    knowledge instead of just
+                    being consumers of knowledge. Our good practices help teachers to set realistic goals at all levels
+                    to give positive
+                    reinforcement at every step of a child. We encourage constant interaction among the students,
+                    teachers, parents and the
+                    community to gain an understanding and develop rapport which creates quality learning environment.
+
+                    We promise to walk the talk and ensure holistic development for every student entrusted to our care.
+                    We assure you that
+                    we will work always towards positive transformation during our journey in transacting quality
+                    education. We would be
+                    most honoured to be partners in meeting your aspirations for your child. I wish you and your child,
+                    the very best.</p>
+            </div>
+            <div class="col-md-4 col-12 text-center mb-3 mb-md-0 ">
+                <img src="all-media/directorr.jpg" alt="Profile" class="profile-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- last-section footer -->
+    <div class="container-fluid sec-7">
+        <div class="row gy-5">
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>Important links</h1> -->
+                <ul class="list">
+                    <a href="book-list.html">Book-List</a>
+                    <a href="transfer-certificate.html"> Transfer Certificate</a>
+                    <a href="t&c.html">Terms & Conditions</a>
+                    <a href="SMC.html">School managing committee</a>
+                    <a href="student-classwise.html">No. of studnts Classwise</a>
+                    <a href="AA.html">Acedmic-Achievements</a>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>other links</h1> -->
+                <ul class="list">
+                    <a href="transport.html">Transport </a>
+                    <a href="about.html">About cambridge</a>
+                    <a href="time-table.html">Time-table</a>
+                    <a href="streams-offered.html">streams offered</a>
+                    <a href="student-council.html">school Alumini's</a>
+                    <a href="R&P.html">Rules & policies</a>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <!-- <h1>other links</h1> -->
+                <ul class="list">
+                    <a href="#">Ministry of Education</a>
+                    <a href="#">Maintained by CBSE</a>
+                    <a href="#">Copyright of cambridge</a>
+                    <a href="#">Hyperlinking policy</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">CBSE portal</a>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12 link-1">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.2822717167937!2d76.52590917543009!3d32.08865597395878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904b38ad4de1bf1%3A0x53662bc62c2a29ab!2sCambridge%20International%20School!5e0!3m2!1sen!2sin!4v1756272261465!5m2!1sen!2sin"
+                        width="auto" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

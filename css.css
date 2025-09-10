@@ -4,6 +4,11 @@ html {
     overflow-x: hidden;
 }
 
+/* apply anywhere all classes */
+.btn {
+    background-color: rgb(20, 132, 20);
+}
+
 /* 1st section navbar*/
 .navbar {
     background-color: rgb(23, 31, 76);
@@ -55,19 +60,19 @@ html {
 
 /* 3rd section */
 #about-school h1 {
-    font-size: 55px;
+    font-size: 5vw;
 }
 
-#about-schoolh2 {
-    font-size: 35px;
+#about-school h2 {
+    font-size: 3vw;
 }
 
 #about-school p {
-    font-size: 25px;
+    font-size: 1.5vw;
 }
 
 #three {
-    background-color: rgb(41, 11, 93);
+    background-color: rgb(7, 7, 7);
 }
 
 #about-school {
@@ -75,32 +80,34 @@ html {
 }
 
 .major img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    display: block;
+    border-radius: 30%;
+
 }
 
-@media (max-width: 768px) {
-
-    #about-school h1,
-    #about-school h2 {
-        text-align: center;
+@media (max-width:768px) {
+    .major img {
+        padding: 0vw 13vw;
     }
 
-    #rm {
-        display: block;
-        margin: 0 auto;
+    .btn {
+        font-size: 2vw;
+    }
+
+    .btn a {
+        width: 2vw;
+
     }
 }
 
-@media (min-width: 1245px) {
+@media (max-width:350px) {
+    .btn a {
+        width: 1vw;
+    }
 
-    /* 3rd section */
-    #three {
-        margin-top: 0;
-        padding-left: 100px;
-        padding-right: 100px;
-
+    .btn {
+        font-size: 2vw;
     }
 }
 
@@ -111,13 +118,6 @@ html {
     text-align: center;
 }
 
-button {
-    background-color: rgb(3, 150, 18);
-}
-
-.btn {
-    color: white;
-}
 
 .first {
     padding: 20px;

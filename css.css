@@ -327,7 +327,7 @@ textarea.form-control {
 /* calender */
 
 .notification-box {
-    height: 720px;
+    height: vh;
 
     /* Show approx 7 notifications (10 * 40px) */
     overflow: hidden;
@@ -344,13 +344,13 @@ textarea.form-control {
 }
 
 .notification-item {
-    height: 80px;
+    height: 45px;
     display: flex;
     align-items: center;
     padding: 0 18px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     /* border-bottom: 1px solid #1e0445; */
-    transition: transform 0.5s ease;
+    transition: transform 0.2s ease;
     background-color: rgb(3, 153, 180);
 }
 
@@ -358,13 +358,13 @@ textarea.form-control {
     color: rgb(36, 13, 212);
 }
 
-
+/* 
 @media (max-width:1245px) {
     .section-6 {
         padding: 20px 50px;
     }
 
-}
+} */
 
 /* last footer */
 .sec-7 {

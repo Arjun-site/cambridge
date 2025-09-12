@@ -415,7 +415,6 @@ html {
     gap: 10px;
     font-size: 1.4vw;
     text-wrap: nowrap;
-    overflow-x: hidden;
 }
 
 .list a {
@@ -430,6 +429,7 @@ html {
 
     .list {
         gap: 7px;
+        text-wrap: nowrap;
     }
 
     .sec-7 {

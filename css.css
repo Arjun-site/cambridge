@@ -353,7 +353,7 @@ form button:hover {
 .notification-box {
     display: flex;
     flex-direction: column;
-    max-height: 400px;
+    max-height: 415px;
     overflow: hidden;
 }
 
@@ -388,6 +388,10 @@ form button:hover {
     .main-container {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .notification-box {
+        height: 22vw;
     }
 }
 

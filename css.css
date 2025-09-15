@@ -295,110 +295,106 @@ html {
     }
 }
 
-/* 6th section */
 .main-container {
     display: flex;
-    padding: 20px;
-    gap: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* Left Form */
+.form-section,
+.notification-box {
+    flex: 1 1 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+/* === Contact Form Styles === */
 .form-section {
-    flex: 1;
     padding: 20px;
-    background: #f0f0f0;
-    border-radius: 10px;
 }
 
-.form-section form {
+.form-section h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
-.form-section input,
-.form-section textarea {
+form input,
+form textarea {
     padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
 
-.form-section button {
+form button {
     padding: 10px;
-    background: teal;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-/* Right Notification */
+form button:hover {
+    background-color: #0056b3;
+}
 
+/* === Notification Box Styles === */
 .notification-box {
-    width: 60vw;
-    height: 50vh;
-    /* 7 items * 40px */
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
     overflow: hidden;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background: #744f4f;
+}
+
+.notification-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .notification-list {
-    /* background-color: aqua; */
     list-style: none;
-    transition: transform 0.3s ease-in-out;
-    padding: 0px 0px;
-
+    padding: 15px;
+    margin: 0;
+    overflow-y: auto;
+    flex-grow: 1;
 }
 
 .notification-list li {
-    height: 10vh;
-    width: 60vw;
-    line-height: 1.3rem;
-    padding: 10px 10px;
-    border-bottom: 1px solid #eee;
-    background-color: #d6d684;
-    text-wrap: wrap;
-    font-size: 1rem;
+    background: #eef;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-@media (max-width:992px) {
+/* === Responsive Design === */
+@media (max-width: 768px) {
     .main-container {
-        display: flex;
         flex-direction: column;
-    }
-
-    .form-section {
-        width: 80%;
-        align-self: center;
-    }
-
-    .notification-box {
-        width: 80%;
-        align-self: center;
-    }
-
-    .notification-list li {
-        width: 100%;
-        padding-top: 13px;
-
-    }
-}
-
-@media (max-width:450px) {
-    .notification-list li {
-        height: auto;
-    }
-
-    .notification-list {
-        height: auto;
+        align-items: stretch;
     }
 }
 
 /* last footer */
 .map-container iframe {
     height: 18vw;
+    padding: 10px 10px;
 }
 
 .sec-7 {

@@ -478,47 +478,61 @@ form button:hover {
 /* last footer */
 .map-container iframe {
     height: 18vw;
-    padding: 10px 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
 }
 
+/* Section Styling */
 .sec-7 {
     text-align: center;
-    padding: 10px 10px;
+    padding: 20px 10px;
     background-color: rgb(21, 21, 20);
-    height: auto;
-
+    color: white;
 }
 
+/* Link List */
 .list {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 1.4vw;
-    text-wrap: nowrap;
+    font-size: 1.2vw;
+    text-align: left;
 }
 
 .list a {
     color: white;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
+.list a:hover {
+    color: #ccc;
+}
 
-@media (max-width:576px) {
-    .list a {
-        font-size: 2.6vw;
-    }
-
+/* Mobile & Small Devices */
+@media (max-width: 768px) {
     .list {
-        gap: 7px;
-        text-wrap: nowrap;
-    }
-
-    .sec-7 {
-        padding: 5px 5px;
-
+        font-size: 2.5vw;
     }
 
     .map-container iframe {
-        height: 28vw;
+        height: 40vw;
     }
 
+    .sec-7 {
+        padding: 10px;
+    }
+}
+
+/* Very Small Devices */
+@media (max-width: 480px) {
+    .list {
+        font-size: 3.5vw;
+        gap: 6px;
+    }
+
+    .map-container iframe {
+        height: 55vw;
+    }
 }
